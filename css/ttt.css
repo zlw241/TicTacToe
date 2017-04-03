@@ -1,0 +1,73 @@
+ul, li, figure, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.grid {
+  list-style: none;
+  margin: 30px auto;
+  width: 300px;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid > li {
+  float: left;
+  width: 90px;
+  height: 90px;
+  border: 5px solid black;
+  background: #ddd;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ttt {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
+
+.grid li:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+
+.grid li.clicked {
+  background-color: yellow;
+}
+
+.grid > li.x {
+  background-color: yellow;
+}
+
+.grid > li.o {
+  background-color: purple;
+}
+
+.grid > li.winner {
+  background-color: green;
+}
